@@ -64,3 +64,9 @@ Route::get('/user-check/{id}/{name?}', function ($id,$name) {
 Route::get('/ndt-account',[NdtAccountController::class,'index'])->name('ndtAccount.index');
 
 Route::get('/ndt-account-create', [NdtAccountController::class,'create']);
+
+Route::get('/ndt-account-show',[NdtAccountController::class,'showData'])->name('ndtAccount.show');
+
+Route::get('/ndt-account-list',[NdtAccountController::class,'list'])->name('ndtAccount.list');
+
+Route::get('/ndt-account-getallcount',[NdtAccountController::class,'ndtgetacount'])->name('ndtAccount.getallaccount');
